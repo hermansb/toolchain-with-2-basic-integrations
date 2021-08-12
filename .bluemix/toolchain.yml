@@ -1,0 +1,20 @@
+version: 2
+template:
+  name: Build your own toolchain
+  description: TVT-scc-test
+toolchain:
+  name: TVT-scc-test
+services:
+  orion00:
+    parameters:
+      toolchain_id: '****'
+      dashboard_url: '****'
+    service_id: orion
+  draservicebroker01:
+    parameters:
+      cf_controller: '****'
+      dra_server: '****'
+      dlms_server: '****'
+      dashboard_url: '****'
+      env_id: '****'
+    service_id: draservicebroker
